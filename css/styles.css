@@ -67,7 +67,7 @@ body {
     left: 0;
     border-width: 0 0 10vh 100vw;
     border-style: solid;
-    border-color: transparent transparent #9b9b9b transparent;
+    border-color: transparent transparent #949494 transparent;
 }
 
 .skew-arriba {
@@ -893,7 +893,7 @@ section.products {
 /** Galería de videos #2e8d86 **/
 .galeria-video {
     position: relative;
-    background: #9b9b9b;
+    background: #949494;
     width: 100%;
     padding: 1%;
 }

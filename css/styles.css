@@ -33,6 +33,7 @@ body {
     cursor: pointer;
     z-index: 1000;
     transition: 0.5s;
+    border-radius: 50px;
 }
 
 .go-top:hover {

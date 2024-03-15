@@ -1052,3 +1052,48 @@ video:focus {
     width: 100%;
     height: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .container h1 {
+        font-size: 2.5em;
+        width: 60%;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .feature-img,
+    .feature-img-img {
+        width: 100%;
+    }
+
+    .small-img img {
+        width: 100%;
+    }
+    .small-img-row p {
+        margin: 3%;
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .container h1 {
+        font-size: 2em;
+        width: 80%;
+    }
+
+    .small-img-row p {
+        margin: 2%;
+        font-size: 0.8em;
+    }
+}

@@ -223,13 +223,13 @@ nav ul li ul li a:hover {
 }
 
 .img-header .welcome>button {
-    width: 170px;
+    width: 160px;
     height: 40px;
     background: var(--red);
     border-radius: 24px;
     border: none;
     outline: none;
-    font-size: 22px;
+    font-size: 17px;
     color: #fff;
     text-align: center;
     margin-top: 20px;

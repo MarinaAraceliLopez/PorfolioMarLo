@@ -31,5 +31,14 @@
     
     }
     
+    document.addEventListener("DOMContentLoaded", function() {
+      var desplegableItems = document.querySelectorAll('.desplegable-content a');
+      for (var i = 0; i < desplegableItems.length; i++) {
+        desplegableItems[i].addEventListener('click', function() {
+          // Ocultar el menú desplegable al hacer clic en una opción
+          document.querySelector('.desplegable-content').style.display = 'none';
+        });
+      }
+    });
 
 

@@ -370,7 +370,6 @@ nav ul li ul li a:hover {
     }
 }
 
-/** Nuestros proyectos **/
 .our-projects {
     position: relative;
     width: 100%;
@@ -402,7 +401,8 @@ nav ul li ul li a:hover {
     margin: auto;
     padding-top: 100px;
     padding-bottom: 50px;
-    display: ruby-text;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .our-projects .container-project .project-title {
@@ -443,18 +443,94 @@ nav ul li ul li a:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width:773px) {
+.our-projects .container-project .project-title {
+    border: 2px solid #fff;
+    padding: 5px;
+    text-align: center;
+    width: 40%;
+    margin: 2% 0 0 30%;
+}
+
+.our-projects .container-project .project-img figure {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.our-projects .capa {
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+.our-projects .capa p {
+    margin: 40px 80px 40px 90px; /* margen superior, derecha, inferior, izquierda */
+    font-size: 16px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+}
+
+
+/* Ajustes para centrar h3 y p */
+.our-projects .capa h3  { 
+    font-weight: 500;  
+    font-size: 24px;   
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    
+}
+
+
+
+.our-projects figure:hover .capa {
+    display: flex;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 773px) {
     .our-projects .container-project .project-img img {
         width: 80%;
         margin-bottom: 30px;
     }
 }
 
-@media only screen and (max-width:446px) {
+@media only screen and (max-width: 446px) {
     .our-projects .container-project .project-title h2 {
         font-size: 30px;
     }
 }
+
+
+
+@media only screen and (max-width: 773px) {
+    .our-projects .container-project .project-img img {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    .our-projects .container-project .project-title h2 {
+        font-size: 30px;
+    }
+}
+
 
 /** Testimonios **/
 .testimonios {
@@ -786,7 +862,7 @@ nav ul li ul li a:hover {
     height: 100%;
     transition: all 400ms ease-out;
     will-change: transform;
-    margin: 1px;
+    margin: 10px;
 }
 
 .container-project figure .capa {
@@ -799,8 +875,15 @@ nav ul li ul li a:hover {
     opacity: 0;
     visibility: hidden;
     text-align: center;
+   
 }
 
+.capa .p{
+    justify-content: center;
+    text-align: center ;
+    padding: 50px;
+
+}
 .container-project figure:hover>.capa {
     opacity: 1;
     visibility: visible;
@@ -808,29 +891,15 @@ nav ul li ul li a:hover {
 
 .container-project figure:hover>.capa h3 {
     margin-top: 70px;
-    margin-bottom: 15px;
+    margin-bottom: px;
 }
 
 .container-project figure:hover>img {
     transform: scale(1.3);
 }
 
-.container-project figure .capa h3 {
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 120px;
-    transition: all 400ms ease-out;
-    margin-top: 30px;
-}
 
-.container-project figure .capa p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.5;
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
-}
+
 
 /** Galería de videos #2e8d86 **/
 .galeria-video {
